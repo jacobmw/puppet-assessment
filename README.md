@@ -1,7 +1,7 @@
 # puppet-assessment
 A simple Puppet assessment skeleton using vagrant.
 
-**Firstly fork this repo, then clone your fork to work on.**
+**First step: fork this repo, then clone your fork to work on.**
 
 ## Software Required
 
