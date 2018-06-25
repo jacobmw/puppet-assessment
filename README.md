@@ -54,7 +54,7 @@ data when it is updated and allowing the app to be down.**
 ### Keep on running
 
 Currently the application is run with an exec and backgrounds the process.
-Although this works it's no a very good thing to do.
+Although this works, it's not a very good thing to do (seriously, it's awful).
 
 **Find a way to run go-service that allows us to check the status of the service
 and start, stop or restart it. The go-service should be running and run if the
