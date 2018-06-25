@@ -15,10 +15,10 @@ instead.
 
 ## Overview
 
-Running `vagrant up` should build and run an app named `service` which is
-written in golang. The app deliberately takes a while to respond to a request
+Running `vagrant up` should build and run an app named `go-service` which is
+written in golang. The app deliberately takes a while to respond to a request,
 it does this using a `sleep` but imagine in the real world a slow query or some
-big data machine learning algorithm is being run.
+_Big Data Machine Learning_ algorithm working to get some results.
 
 Everything in this repo works... eventually. There are deliberate problems which
 often occur in the real world to solve before things do get up and running.
