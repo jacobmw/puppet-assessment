@@ -13,7 +13,7 @@ instead.
 [Vagrant](https://www.vagrantup.com)  
 [Virtualbox](https://www.virtualbox.org/)
 
-## Overview
+## Overview
 
 Running `vagrant up` should build and run an app named `service` which is
 written in golang. The app deliberately takes a while to respond to a request
@@ -51,7 +51,7 @@ error.
 **Add something that will speed up the majority of requests, showing the new
 data when it is updated and allowing the app to be down.**
 
-### Keep on running
+### Keep on running
 
 Currently the application is run with an exec and backgrounds the process.
 Although this works it's no a very good thing to do.
