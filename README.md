@@ -75,5 +75,17 @@ the instance.**
 On completion of the above (you may need to do one or more extra things), the
 expectation is that you should be able to go to http://localhost:8080 in your
 web browser and get some output. You should be able to refresh the page and get
-an almost instant response back. Stopping the `go-service` process or service
-should not stop the output being availalbe to the browser.
+an almost instant response back.
+
+Stopping or killing the `go-service` process or service should not stop the output being
+available to the browser.
+
+## Bonus points
+
+Add some form of logging of requests.
+
+## Other considerations for disscussion / thinking about
+
+How would you make sure the application is secure, is there anything in particular to
+worry about? How would you know if the app was working or not? What would you change or
+advise the potential client or dev team to change or think about? 
