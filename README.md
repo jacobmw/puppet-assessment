@@ -56,7 +56,7 @@ data when it is updated and allowing the app to be down.**
 Currently the application is run with an exec and backgrounds the process.
 Although this works it's no a very good thing to do.
 
-**Find a way to run go0service that allows us to check the status of the service
+**Find a way to run go-service that allows us to check the status of the service
 and start, stop or restart it. The go-service should be running and run if the
 instance were rebooted. THe go-service should automatically restart on error.**
 
