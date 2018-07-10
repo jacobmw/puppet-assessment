@@ -31,6 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         inline: "cd /vagrant/puppet/ && /opt/puppetlabs/puppet/bin/librarian-puppet install"
 
       config.vm.provision "puppet" do |puppet|
+        puppet.options = "--test"
         puppet.working_directory = "/tmp/vagrant-puppet/"
         puppet.hiera_config_path = "puppet/hiera.yaml"
         puppet.manifests_path = "puppet/manifests"
