@@ -41,16 +41,6 @@ instance and doing something potentially CV altering becomes.
 **Add something that will display the hostname and role of the machine on
 login. This should be consistent on all future instances.**
 
-### Go faster
-
-The TTFB of requests to the app is very slow, the app is stateless and the
-data it returns is the same / only gets updated every 30 minutes (well, let's
-pretend that is the case). If the app is down, users want to receive stale or
-out of date information rather than an error.
-
-**In some way, speed up the majority of requests, showing the new data when it
-is updated and allowing the app to be down.**
-
 ### Keep on running
 
 Currently, the application is run with an exec and backgrounds the process.
@@ -77,9 +67,6 @@ On completion of the above (you may need to do one or more extra things), the
 expectation is that you should be able to go to http://localhost:8080 in your
 web browser and get some output. You should be able to refresh the page and get
 an almost instant response back.
-
-Stopping or killing the `go-webapp` process or service should not stop the output being
-available to the browser.
 
 ## Bonus points
 
