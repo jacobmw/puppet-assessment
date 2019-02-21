@@ -4,7 +4,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'ben-cts/centos-7'
-  config.vm.box_version = '0.0.3'
+    config.vm.box_version = '0.0.4'
 
   NODES.each do |node|
     node_name = node[0]
@@ -28,7 +28,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
 
       config.vm.provision "shell",
-        inline: "cd /vagrant/puppet/ && /opt/puppetlabs/puppet/bin/librarian-puppet install"
+        inline: "sed -i '3 i nameserver 8.8.8.8' /etc/resolv.conf && cd /vagrant/puppet/ && /opt/puppetlabs/puppet/bin/librarian-puppet install"
+        # inline: "rpm -Uvh https://yum.puppet.com/puppet6/puppet6-release-el-7.noarch.rpm && yum -y install rubygems-devel puppet && gem install librarian-puppet -N && cd /vagrant/puppet/ && /usr/local/bin/librarian-puppet install"
 
       config.vm.provision "puppet" do |puppet|
         puppet.options = "--test"
